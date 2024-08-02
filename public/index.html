@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Khanga</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body style="background-image: url(img/leso.jpg);">
+    <nav class="navbar">
+        <div class="navbar-logo">Khanga</div>
+        <div class="navbar-menu">
+            <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="https://khanga.moodlecloud.com/login/index.php" class="take-course">Take Class!</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header-overlay">
+            <h1 class="landing-title">Welcome to the World of Kangas</h1>
+            <p class="landing-text">There is no single textile so intimately associated with the Eastern African region, particularly the nations of Kenya and Tanzania, as the rectangular pieces of cloth known as leso (also known as kanga).<br/> Popular discourse and much academic research on its origin focus primarily on its emergence in the latter part of the nineteenth century to the Swahili Coast seaports of Mombasa (historically known as Mvita) in Kenya and Unguja (the main island of Zanzibar) in Tanzania. <br/>In the century or so since then, leso has become ubiquitous in these two countries, and is also found in many others in the eastern African region.</p>
+            <a href="history.html" class="landing-button" onclick="openNewTab()">Explore History</a>
+            <h1 class="more-info">Want to learn more? Take a class by signing up here!</h1>
+            <a href="https://khanga.moodlecloud.com/login/index.php" class="landing-button">Take Class</a>
+        </div>
+    </header>
+    <script>
+        // Toggle Navbar for smaller screens
+        document.getElementById('navbar-toggler').addEventListener('click', function() {
+            var links = document.getElementById('navbar-links');
+            links.style.display = (links.style.display === 'block' ? 'none' : 'block');
+        });
+    </script>
+    <script>
+        function openNewTab() {
+            window.open('history.html', '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html>
